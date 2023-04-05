@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+  align-items: center;
+  background-color: black;
+  height: 40px;
+}
+a {
+  color: whitesmoke;
+  font-size: small;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 769px) {
+  .footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    height: 55px;
+    grid-area: footer;
+  }
+  a {
+    color: whitesmoke;
+    font-size: small;
+    font-weight: 300;
+  }
+  a:hover {
+    font-weight: 550;
+  }
+}

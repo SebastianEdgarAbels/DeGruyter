@@ -1,0 +1,41 @@
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  grid-column: 1/5;
+  background: black;
+  color: white;
+  height: 55px;
+  font-size: 10px;
+  text-align: start;
+  padding-left: 18px;
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content;
+    height: 100vh;
+    grid-template-areas:
+      'header header footer footer'
+      'sidepanel content content content'
+      'sidepanel content content content'
+      'sidepanel content content content';
+  }
+  .header {
+    background: black;
+    color: white;
+    height: 55px;
+    font-size: 10px;
+    text-align: start;
+    padding-left: 18px;
+    grid-area: header;
+  }
+}

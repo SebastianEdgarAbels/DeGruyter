@@ -1,0 +1,51 @@
+.sidepanel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: lightgrey;
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
+}
+pre {
+  margin: 0.5em;
+}
+pre:first-child {
+  padding-top: 17px;
+}
+button {
+  all: unset;
+}
+
+button:hover {
+  color: rgb(100, 152, 199);
+}
+
+.show-more {
+  font-size: large;
+  float: right;
+  padding-right: 15px;
+  color: rgb(100, 152, 199);
+}
+
+.sidepanel-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .sidepanel {
+    grid-row: 2/5;
+  }
+  .sidepanel-mobile {
+    display: none;
+  }
+  .show-more {
+    display: none;
+  }
+  .sidepanel-desktop {
+    display: block;
+  }
+  .show-more:hover {
+    color: rgb(136, 178, 215);
+  }
+}
