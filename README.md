@@ -10,6 +10,14 @@ This was the assignment
 Please remember to use the page designs that we provided, and feel free to implement any other functionality that you deem important.
 
 2. What is the output of the code in the image below? Why setTimeout isn’t working? Change the code to print each value after the specified setTimeout interval (e.g. 1000ms).
+function timer(i) {
+    setTimeout(function () {
+    }, 1000);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    timer(i);
+  }
 
 ![JS sync async context](js_sync_async_test.png)
 
