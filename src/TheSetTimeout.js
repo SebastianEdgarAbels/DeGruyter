@@ -3,7 +3,7 @@ import React from 'react';
 export default function TheSetTimeout() {
   function timer(i) {
     setTimeout(function () {
-      console.log(i);
+      console.log(1000 * (i + 1));
     }, 1000 * (i + 1));
   }
 
